@@ -1,0 +1,13 @@
+{
+  "name": "mzmedia-docs",
+  "version": "2.0.0",
+  "description": "MzMedia - 企业级 AI 驱动物联网与视频融合平台官方技术文档",
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build . && node -e \"require('fs').cpSync('.vitepress/dist', '.', {recursive: true, force: true})\"",
+    "docs:preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
