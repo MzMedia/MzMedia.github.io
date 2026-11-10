@@ -135,6 +135,45 @@ features:
 
 </div>
 
+<div style="margin-top: 64px; text-align: center;">
+  <h2 style="font-size: 28px; font-weight: 700; border: none; margin-bottom: 8px;">💡 平台核心对比与差异化优势</h2>
+  <p style="color: var(--vp-c-text-2); max-width: 720px; margin: 0 auto 32px; font-size: 15px;">
+    为什么企业数字化转型需要“物联传感器 + 安防视频 + AI Agent”的深度融合？
+  </p>
+</div>
+
+| 评估维度 | 传统纯 IoT 平台 (如 ThingsBoard) | 传统视频监控平台 (如 WVP / LiteCVR) | MzMedia AIoT 融合平台 |
+| :--- | :--- | :--- | :--- |
+| **视频流媒体集成** | 需二次开发外挂流媒体服务 | 专注视频流，无工控数据采集 | **原生深度融合 GB/T 28181 + ZLMediaKit** |
+| **工业工控协议** | 偏通用 MQTT，工业现场协议需付费扩展 | 仅支持安防协议 | **内置 13+ 工业协议（Modbus/MQTT/TSL物模型）** |
+| **联动响应时效** | 无法做到跨视频预置位秒级调度 | 仅能手工查看录像回放 | **毫秒级联动（传感器告警瞬间驱动球机 0x81 转向）** |
+| **AI 智能运维** | 仅传统阈值告警，无专家诊断 | 需安保人工盯屏 | **Spring AI 1.1+ & MCP 智能体自动化 RAG 诊断** |
+| **时序存储成本** | 传统关系型或 Mongo 存储成本高昂 | 无传感器时序聚合能力 | **TDengine 超级表列存超高压缩（节约 80% 成本）** |
+| **企业经营闭环** | 缺乏项目交付与备件协同 | 无法追踪硬件全生命周期 | **打通 PMS工程交付 + MES工单 + WMS备件库存** |
+
+<div style="margin-top: 64px; text-align: center;">
+  <h2 style="font-size: 28px; font-weight: 700; border: none; margin-bottom: 8px;">❓ 常见问题与技术问答 (FAQ)</h2>
+  <p style="color: var(--vp-c-text-2); max-width: 720px; margin: 0 auto 32px; font-size: 15px;">
+    快速了解 MzMedia 的核心架构、适用场景与部署方案
+  </p>
+</div>
+
+::: details 什么是 MzMedia？它主要解决什么问题？
+**MzMedia** 是一款专为中小企业量身打造的企业级开源 AI 驱动物联网与安防视频融合平台。它打破了传统工业控制网络（SCADA/MES）与安防视频监控系统（VMS/NVR）之间的“数据孤岛”，抹平 Modbus、MQTT、GB/T 28181、ZLMediaKit 等多协议差异，并通过 Spring AI 与 MCP（Model Context Protocol）智能体实现低成本全生命周期运维。
+:::
+
+::: details 为什么推荐将物联网传感器与 GB28181 视频监控深度融合？
+在工业、园区与危化品仓库等现场，单纯看监控无法预知内部温度或压力；单纯看数字仪表又无法直观确认现场烟雾或着火点。MzMedia 实现**“声光电像智”全面协同**：当 Modbus 测温传感器超过预警阈值时，系统在毫秒内发送 GB28181 0x81 信令驱动 4K 球机转向故障预置位，并调用多模态视觉大模型双重确认，秒级将现场视频推送大屏并派发维修工单。
+:::
+
+::: details MzMedia 如何利用 Spring AI 与 MCP 协议进行智能运维？
+MzMedia 作为标准的 **Anthropic MCP Server**，将云台转向控制、传感器时序指标读取、控制指令下发、MES 工单生成等抽象为标准 Tool 和 Resource。主流 AI 客户端（如 Claude、Cursor、DeepSeek、GPT）可以直接通过自然语言调度硬件与平台；结合 TDengine 时序数据与 Spring AI RAG 知识库，大模型可自动进行故障根因推导与私有协议逆向。
+:::
+
+::: details 如何快速私有化部署体验 MzMedia？
+MzMedia 提供开箱即用的 Docker Compose 编排套件，只需一条命令即可快速拉起 MySQL、Redis、TDengine、EMQX、ZLMediaKit 和前后端服务。详细步骤请参考 [Docker 编排快速部署指南](/deploy/docker-compose)。
+:::
+
 <style>
 :root {
   --vp-home-hero-name-color: transparent;

@@ -4,7 +4,7 @@
   "description": "MzMedia - 企业级 AI 驱动物联网与视频融合平台官方技术文档",
   "scripts": {
     "docs:dev": "vitepress dev .",
-    "docs:build": "vitepress build . && node -e \"require('fs').cpSync('.vitepress/dist', '.', {recursive: true, force: true})\"",
+    "docs:build": "vitepress build . && node -e \"const fs=require('fs'),p=require('path'),s='.vitepress/dist';for(const i of fs.readdirSync(s))fs.cpSync(p.join(s,i),p.join('.',i),{recursive:true,force:true})\"",
     "docs:preview": "vitepress preview ."
   },
   "devDependencies": {
