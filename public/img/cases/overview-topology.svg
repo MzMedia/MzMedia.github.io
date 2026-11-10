@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="520" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="280" y="20" width="400" height="38" rx="19" fill="#1e293b" stroke="url(#brandGrad)" stroke-width="1.5"/>
+  <text x="480" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#f8fafc" text-anchor="middle">
+    MzMedia AIoT 全场景端到端闭环协同拓扑
+  </text>
+
+  <!-- Layer 1: Perception & Actuation Layer (Top) -->
+  <g transform="translate(30, 75)">
+    <rect width="900" height="90" rx="10" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">【物理感知与现场执行层】</text>
+    
+    <!-- Item 1: Modbus -->
+    <rect x="20" y="38" width="160" height="40" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="100" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">📟 Modbus 仪器与 PLC</text>
+
+    <!-- Item 2: Video Cam -->
+    <rect x="200" y="38" width="160" height="40" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+    <text x="280" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">📹 GB/T 28181 4K 球机</text>
+
+    <!-- Item 3: LoRa & Wireless -->
+    <rect x="380" y="38" width="160" height="40" rx="6" fill="#0f172a" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="460" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">📡 LoRaWAN / 4G 变送器</text>
+
+    <!-- Item 4: Edge AI Boxes -->
+    <rect x="560" y="38" width="160" height="40" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="640" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">🧠 边缘 AI 推理盒子</text>
+
+    <!-- Item 5: Actuators -->
+    <rect x="740" y="38" width="140" height="40" rx="6" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+    <text x="810" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">⚡ 继电器 / 声光警号</text>
+  </g>
+
+  <!-- Connectors Layer 1 to 2 -->
+  <line x1="100" y1="165" x2="250" y2="195" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#arrow)"/>
+  <line x1="280" y1="165" x2="350" y2="195" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="460" y1="165" x2="480" y2="195" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="640" y1="165" x2="600" y2="195" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="780" y1="195" x2="810" y2="165" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Layer 2: MzMedia Gateway & Stream Cluster -->
+  <g transform="translate(30, 195)">
+    <rect width="900" height="90" rx="10" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="20" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#38bdf8">【MzMedia 通信网关与流媒体集群】</text>
+    
+    <rect x="30" y="38" width="260" height="40" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="160" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">🔌 13+ 物联网协议栈 (Netty)</text>
+
+    <rect x="320" y="38" width="260" height="40" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="450" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">🎥 ZLMediaKit (WebRTC / H.265)</text>
+
+    <rect x="610" y="38" width="260" height="40" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="740" y="63" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">📐 统一 TSL 物模型 &amp; 状态影子</text>
+  </g>
+
+  <!-- Connectors Layer 2 to 3 -->
+  <line x1="250" y1="285" x2="250" y2="315" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="285" x2="480" y2="315" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="720" y1="285" x2="720" y2="315" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Layer 3: Rule Engine & Intelligence Core -->
+  <g transform="translate(30, 315)">
+    <rect width="900" height="85" rx="10" fill="url(#cardGrad1)" stroke="#8b5cf6" stroke-width="1.2"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#a78bfa">【双核心规则引擎与 Spring AI 智能中枢】</text>
+
+    <rect x="30" y="35" width="260" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="160" y="59" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">⚙️ TCA 场景联动规则引擎</text>
+
+    <rect x="320" y="35" width="260" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="450" y="59" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">📊 TDengine 海量时序超级表</text>
+
+    <rect x="610" y="35" width="260" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="740" y="59" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">🤖 Spring AI (MCP Tools &amp; RAG)</text>
+  </g>
+
+  <!-- Connectors Layer 3 to 4 -->
+  <line x1="180" y1="400" x2="180" y2="425" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="380" y1="400" x2="380" y2="425" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="580" y1="400" x2="580" y2="425" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="780" y1="400" x2="780" y2="425" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Layer 4: Business Synergy & Closed-Loop Matrix -->
+  <g transform="translate(30, 425)">
+    <rect width="900" height="75" rx="10" fill="url(#cardGrad1)" stroke="#10b981" stroke-width="1.2"/>
+    <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#34d399">【业务闭环协同矩阵】</text>
+
+    <rect x="30" y="32" width="195" height="32" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="127" y="53" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">📋 PMS 工程项目交付</text>
+
+    <rect x="250" y="32" width="195" height="32" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="347" y="53" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">🏭 MES 制造与设备工单</text>
+
+    <rect x="470" y="32" width="195" height="32" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="567" y="53" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">📦 WMS 备件库存预占</text>
+
+    <rect x="690" y="32" width="180" height="32" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="780" y="53" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9" text-anchor="middle">📊 GoView 大屏与钉钉推送</text>
+  </g>
+</svg>

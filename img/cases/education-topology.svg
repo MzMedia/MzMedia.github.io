@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="eTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <marker id="eArrowPurple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#8b5cf6"/>
+    </marker>
+    <marker id="eArrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="460" rx="16" fill="url(#eBg)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="230" y="18" width="460" height="34" rx="17" fill="#1e293b" stroke="url(#eTitle)" stroke-width="1.5"/>
+  <text x="460" y="40" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">
+    智慧高校实验室：危化品安全感知、着装审计与能效中枢
+  </text>
+
+  <!-- Left: Lab Safety Sensors -->
+  <g transform="translate(35, 75)">
+    <rect width="230" height="345" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="115" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#c084fc" text-anchor="middle">【实验室感知与门禁】</text>
+
+    <rect x="20" y="50" width="190" height="65" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f87171">防爆柜 VOC/可燃气体探头</text>
+    <text x="35" y="93" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 0~1000 ppm 挥发溶剂监测</text>
+    <text x="35" y="107" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 浓度超标 50ppm 瞬时越限</text>
+
+    <rect x="20" y="125" width="190" height="65" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="150" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">智能门禁 &amp; 刷卡抓拍</text>
+    <text x="35" y="168" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 进门刷卡联动球机预置位1</text>
+    <text x="35" y="182" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 1秒内捕获全身穿戴特写</text>
+
+    <rect x="20" y="200" width="190" height="65" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="225" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24">智能微断断路器空开</text>
+    <text x="35" y="243" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 监测实验台大功率设备</text>
+    <text x="35" y="257" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 测量电流谐波与待机功率</text>
+
+    <rect x="20" y="275" width="190" height="50" rx="6" fill="#2e1065" stroke="#8b5cf6"/>
+    <text x="115" y="305" font-family="system-ui, sans-serif" font-size="11" fill="#ddd6fe" text-anchor="middle">Modbus RTU / 485 总线通讯</text>
+  </g>
+
+  <!-- Flow Arrow Left to Center -->
+  <line x1="265" y1="240" x2="310" y2="240" stroke="#8b5cf6" stroke-width="2" marker-end="url(#eArrowPurple)"/>
+  <text x="288" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#c4b5fd" text-anchor="middle">上报</text>
+
+  <!-- Center: AI Audit & Power Dispatch -->
+  <g transform="translate(310, 75)">
+    <rect width="270" height="345" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="135" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#38bdf8" text-anchor="middle">【AI 视觉督导与安全排程中枢】</text>
+
+    <rect x="20" y="50" width="230" height="90" rx="6" fill="#1e293b" stroke="#8b5cf6"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#c084fc">Spring AI 视觉着装规范审计</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#e9d5ff">· 判定是否穿实验服 (扣好纽扣)</text>
+    <text x="35" y="112" font-family="system-ui, sans-serif" font-size="11" fill="#e9d5ff">· 检查护目镜/手套/包头鞋穿戴</text>
+    <text x="35" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#a855f7">· 违规语音告警并记入安全档案</text>
+
+    <rect x="20" y="150" width="230" height="90" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="175" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">教务排课系统联动</text>
+    <text x="35" y="195" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 读取当日 32 间实验室排课表</text>
+    <text x="35" y="212" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 下课 15 分钟后自动断开动力电</text>
+    <text x="35" y="228" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 杜绝电炉/马弗炉忘关火警</text>
+
+    <rect x="20" y="250" width="230" height="75" rx="6" fill="#1e293b" stroke="#ef4444"/>
+    <text x="35" y="275" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f87171">危化品泄漏自愈联动</text>
+    <text x="35" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#fca5a5">· 500ms 内强启天花板强排风机</text>
+    <text x="35" y="312" font-family="system-ui, sans-serif" font-size="10" fill="#fca5a5">· 球机调焦录像并推送保卫处</text>
+  </g>
+
+  <!-- Flow Arrow Center to Right -->
+  <line x1="580" y1="240" x2="625" y2="240" stroke="#38bdf8" stroke-width="2" marker-end="url(#eArrowBlue)"/>
+  <text x="602" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#7dd3fc" text-anchor="middle">执行</text>
+
+  <!-- Right: Safety & Energy Results -->
+  <g transform="translate(625, 75)">
+    <rect width="260" height="345" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <text x="130" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">【安全闭环与能耗管控】</text>
+
+    <rect x="20" y="50" width="220" height="85" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#34d399">安全自愈零事故</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 危化品柜微泄漏 100% 自动稀释</text>
+    <text x="35" y="112" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 违规着装率下降 95%</text>
+    <text x="35" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 师生安全实训违规台账全留痕</text>
+
+    <rect x="20" y="150" width="220" height="85" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="175" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">能耗下降 26%</text>
+    <text x="35" y="195" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 课后非必要负荷自动切除</text>
+    <text x="35" y="212" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 空调/照明无课时段自动休眠</text>
+    <text x="35" y="228" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 严格保留 24h 安防弱电回路</text>
+
+    <rect x="20" y="250" width="220" height="75" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="275" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24">考场 AI 巡考辅助</text>
+    <text x="35" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 低延迟 WebRTC 考场多屏轮巡</text>
+    <text x="35" y="312" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 异常动作打时间戳方便复核</text>
+  </g>
+</svg>

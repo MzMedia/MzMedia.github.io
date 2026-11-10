@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="sTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <marker id="sArrowRed" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#ef4444"/>
+    </marker>
+    <marker id="sArrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="sArrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="460" rx="16" fill="url(#sBg)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="240" y="18" width="440" height="34" rx="17" fill="#1e293b" stroke="url(#sTitle)" stroke-width="1.5"/>
+  <text x="460" y="40" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">
+    智慧园区周界防范：脉冲围栏触碰与现场声光视频联动
+  </text>
+
+  <!-- Left: Pulse Fence Event -->
+  <g transform="translate(35, 75)">
+    <rect width="230" height="345" rx="10" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="115" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#f87171" text-anchor="middle">【周界前端探测层】</text>
+
+    <rect x="20" y="50" width="190" height="70" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fca5a5">脉冲电子围栏主机</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 防区 06 触碰/断线/短路</text>
+    <text x="35" y="110" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 毫秒级干接点/Modbus上报</text>
+
+    <rect x="20" y="135" width="190" height="70" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="160" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">激光对射 &amp; 微波雷达</text>
+    <text x="35" y="180" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 辅助双鉴探测</text>
+    <text x="35" y="195" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 恶劣天气动态抗扰滤波</text>
+
+    <rect x="20" y="220" width="190" height="85" rx="6" fill="#1e293b" stroke="#ef4444"/>
+    <text x="35" y="245" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#ef4444">现场高音号角与爆闪灯</text>
+    <text x="35" y="265" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 120dB 定向高分贝语音</text>
+    <text x="35" y="282" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 强光爆闪红蓝警灯震慑</text>
+    <text x="35" y="298" font-family="system-ui, sans-serif" font-size="10" fill="#f87171">· Modbus 继电器毫秒闭合</text>
+  </g>
+
+  <!-- Arrow Left to Center -->
+  <line x1="265" y1="240" x2="310" y2="240" stroke="#ef4444" stroke-width="2" marker-end="url(#sArrowRed)"/>
+  <text x="288" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#fca5a5" text-anchor="middle">触警</text>
+
+  <!-- Center: MzMedia Gateway & Edge Vision -->
+  <g transform="translate(310, 75)">
+    <rect width="270" height="345" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="135" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#38bdf8" text-anchor="middle">【边缘 AI 研判与联动中枢】</text>
+
+    <rect x="20" y="50" width="230" height="80" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">防区-摄像机拓扑路由</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 防区06 ➔ 球机06 预置位2</text>
+    <text x="35" y="112" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">· 自动完成角度/焦距就位</text>
+
+    <rect x="20" y="145" width="230" height="90" rx="6" fill="#1e293b" stroke="#8b5cf6"/>
+    <text x="35" y="170" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#c084fc">YOLO 边缘视觉推理节点</text>
+    <text x="35" y="190" font-family="system-ui, sans-serif" font-size="11" fill="#e9d5ff">· 人形骨骼识别 &amp; 攀爬判定</text>
+    <text x="35" y="208" font-family="system-ui, sans-serif" font-size="11" fill="#e9d5ff">· 过滤猫狗与树枝大风误触</text>
+    <text x="35" y="225" font-family="system-ui, sans-serif" font-size="11" fill="#a855f7">· 误报率由 65% 降至 1.5%</text>
+
+    <rect x="20" y="250" width="230" height="70" rx="6" fill="#1e293b" stroke="#10b981"/>
+    <text x="35" y="275" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#34d399">反向执行决策下发</text>
+    <text x="35" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#a7f3d0">· 指令现场声光警号就地驱离</text>
+    <text x="35" y="310" font-family="system-ui, sans-serif" font-size="10" fill="#a7f3d0">· 同时广播大屏与手持平板</text>
+  </g>
+
+  <!-- Arrow Center to Right -->
+  <line x1="580" y1="240" x2="625" y2="240" stroke="#38bdf8" stroke-width="2" marker-end="url(#sArrowBlue)"/>
+  <text x="602" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#7dd3fc" text-anchor="middle">分发</text>
+
+  <!-- Right: Command Center & Mobile Dispatch -->
+  <g transform="translate(625, 75)">
+    <rect width="260" height="345" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <text x="130" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">【安保指挥中枢与移动处警】</text>
+
+    <rect x="20" y="50" width="220" height="85" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f1f5f9">安保中控大屏强弹</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· WebRTC 低延迟现场直播</text>
+    <text x="35" y="112" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 电子地图精准锚定经纬度</text>
+    <text x="35" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 扬声器自动鸣响警报声</text>
+
+    <rect x="20" y="150" width="220" height="85" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="175" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">巡更安保手持对讲平板</text>
+    <text x="35" y="195" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 推送带入侵者抓拍红框照片</text>
+    <text x="35" y="212" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 自动规划最近出警赶往路线</text>
+    <text x="35" y="228" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 避免盲目搜索</text>
+
+    <rect x="20" y="250" width="220" height="75" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="275" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24">Spring AI 处警简报</text>
+    <text x="35" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 自动生成带时间戳事件简述</text>
+    <text x="35" y="312" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 归档保卫处警情台账备查</text>
+  </g>
+</svg>

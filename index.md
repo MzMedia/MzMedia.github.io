@@ -13,6 +13,9 @@ hero:
       text: 快速上手 →
       link: /guide/quick-start
     - theme: alt
+      text: 💼 落地案例
+      link: /cases/overview
+    - theme: alt
       text: 系统总体架构
       link: /guide/architecture
     - theme: alt
@@ -42,6 +45,95 @@ features:
     title: 成熟企业级安全底座
     details: 基于 RuoYi-Vue-Pro 深度孵化，适配 Java 21 / Spring Boot 3.5 & 4.1，提供 SaaS 多租户隔离、RBAC 细粒度权限与 Flowable 流程引擎。
 ---
+
+<div style="margin-top: 56px; text-align: center;">
+  <h2 style="font-size: 28px; font-weight: 700; border: none; margin-bottom: 8px;">💼 典型 AIoT 落地场景与实战案例</h2>
+  <p style="color: var(--vp-c-text-2); max-width: 680px; margin: 0 auto 32px; font-size: 15px;">
+    经过中小企业实际工业生产与安防现场严苛验证，实现“声光电像智”全面协同
+  </p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; max-width: 1152px; margin: 0 auto 56px; padding: 0 24px;">
+
+<div style="border: 1px solid var(--vp-c-border); border-radius: 12px; padding: 24px; background: var(--vp-c-bg-soft); display: flex; flex-direction: column; justify-content: space-between;">
+  <div>
+    <div style="font-size: 28px; margin-bottom: 12px;">📹</div>
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px;"><a href="/cases/video-linkage" style="text-decoration: none; color: inherit;">视频与传感器深度联动</a></h3>
+    <p style="font-size: 14px; color: var(--vp-c-text-2); line-height: 1.6; margin: 0;">
+      母排温度或烟雾超限瞬间，毫秒级驱动 4K 球机转向故障预置位（0x81），自动云端切片录像与多模态 AI 视觉复核，实况秒显大屏。
+    </p>
+  </div>
+  <div style="margin-top: 16px;">
+    <a href="/cases/video-linkage" style="font-size: 13px; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none;">查看完整方案与代码 →</a>
+  </div>
+</div>
+
+<div style="border: 1px solid var(--vp-c-border); border-radius: 12px; padding: 24px; background: var(--vp-c-bg-soft); display: flex; flex-direction: column; justify-content: space-between;">
+  <div>
+    <div style="font-size: 28px; margin-bottom: 12px;">🏭</div>
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px;"><a href="/cases/industrial" style="text-decoration: none; color: inherit;">工业应用与预测性维护</a></h3>
+    <p style="font-size: 14px; color: var(--vp-c-text-2); line-height: 1.6; margin: 0;">
+      机床与电机 Modbus 振动峭度与温升采集，TDengine 高频列存，Spring AI RAG 诊断磨损，自动锁定 WMS 备件并派发 MES 工单。
+    </p>
+  </div>
+  <div style="margin-top: 16px;">
+    <a href="/cases/industrial" style="font-size: 13px; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none;">查看完整方案与代码 →</a>
+  </div>
+</div>
+
+<div style="border: 1px solid var(--vp-c-border); border-radius: 12px; padding: 24px; background: var(--vp-c-bg-soft); display: flex; flex-direction: column; justify-content: space-between;">
+  <div>
+    <div style="font-size: 28px; margin-bottom: 12px;">🛡️</div>
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px;"><a href="/cases/security" style="text-decoration: none; color: inherit;">智能安防与园区周界防范</a></h3>
+    <p style="font-size: 14px; color: var(--vp-c-text-2); line-height: 1.6; margin: 0;">
+      脉冲电子围栏触碰秒级调度球机追踪，YOLO 边缘视觉识别攀爬并过滤小动物误报，下发 Modbus 继电器驱动高音爆闪现场驱离。
+    </p>
+  </div>
+  <div style="margin-top: 16px;">
+    <a href="/cases/security" style="font-size: 13px; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none;">查看完整方案与代码 →</a>
+  </div>
+</div>
+
+<div style="border: 1px solid var(--vp-c-border); border-radius: 12px; padding: 24px; background: var(--vp-c-bg-soft); display: flex; flex-direction: column; justify-content: space-between;">
+  <div>
+    <div style="font-size: 28px; margin-bottom: 12px;">🌱</div>
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px;"><a href="/cases/agriculture" style="text-decoration: none; color: inherit;">现代设施农业与智能微气候</a></h3>
+    <p style="font-size: 14px; color: var(--vp-c-text-2); line-height: 1.6; margin: 0;">
+      温室土壤水肥 EC 与空气温湿度多参组网，自动闭环启闭天窗湿帘；云台巡航抓拍，大模型早期识别草莓与番茄叶片微小病斑。
+    </p>
+  </div>
+  <div style="margin-top: 16px;">
+    <a href="/cases/agriculture" style="font-size: 13px; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none;">查看完整方案与代码 →</a>
+  </div>
+</div>
+
+<div style="border: 1px solid var(--vp-c-border); border-radius: 12px; padding: 24px; background: var(--vp-c-bg-soft); display: flex; flex-direction: column; justify-content: space-between;">
+  <div>
+    <div style="font-size: 28px; margin-bottom: 12px;">🎓</div>
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px;"><a href="/cases/education" style="text-decoration: none; color: inherit;">数字化教育与实验室安全</a></h3>
+    <p style="font-size: 14px; color: var(--vp-c-text-2); line-height: 1.6; margin: 0;">
+      化学实训危化品柜 VOC 气体超限 500ms 强排风；门禁联动视觉识别白大褂与护目镜；对接教务排课下课定时切断动力电杜绝火险。
+    </p>
+  </div>
+  <div style="margin-top: 16px;">
+    <a href="/cases/education" style="font-size: 13px; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none;">查看完整方案与代码 →</a>
+  </div>
+</div>
+
+<div style="border: 1px solid var(--vp-c-border); border-radius: 12px; padding: 24px; background: var(--vp-c-bg-soft); display: flex; flex-direction: column; justify-content: space-between;">
+  <div>
+    <div style="font-size: 28px; margin-bottom: 12px;">⚡</div>
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px;"><a href="/cases/energy-carbon" style="text-decoration: none; color: inherit;">智慧能源与微电网调度</a></h3>
+    <p style="font-size: 14px; color: var(--vp-c-text-2); line-height: 1.6; margin: 0;">
+      工商业储能结合分时电价与天气大模型动态削峰填谷，变压器需量越限预测与空调柔性升温，彻底规避超需量巨额罚款。
+    </p>
+  </div>
+  <div style="margin-top: 16px;">
+    <a href="/cases/energy-carbon" style="font-size: 13px; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none;">查看完整方案与代码 →</a>
+  </div>
+</div>
+
+</div>
 
 <style>
 :root {

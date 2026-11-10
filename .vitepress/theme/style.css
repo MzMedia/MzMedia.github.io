@@ -1,0 +1,143 @@
+/* MzMedia 品牌与科技风格主题样式 */
+:root {
+  /* 品牌核心主色盘 - 工业物联网翡翠绿 & 视频流媒体科技蓝 */
+  --vp-c-brand-1: #10b981;
+  --vp-c-brand-2: #059669;
+  --vp-c-brand-3: #047857;
+  --vp-c-brand-soft: rgba(16, 185, 129, 0.14);
+
+  /* 辅助科技蓝 (用于次级高亮、链接与徽章) */
+  --mz-c-blue: #3b82f6;
+  --mz-c-blue-soft: rgba(59, 130, 246, 0.12);
+  --mz-c-purple: #8b5cf6;
+  --mz-c-purple-soft: rgba(139, 92, 246, 0.12);
+
+  /* 首页 Hero 标题背景渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #10b981 30%, #3b82f6 90%);
+}
+
+.dark {
+  --vp-c-brand-1: #34d399;
+  --vp-c-brand-2: #10b981;
+  --vp-c-brand-3: #059669;
+  --vp-c-brand-soft: rgba(52, 211, 153, 0.16);
+
+  --mz-c-blue: #60a5fa;
+  --mz-c-blue-soft: rgba(96, 165, 250, 0.16);
+  --mz-c-purple: #a78bfa;
+  --mz-c-purple-soft: rgba(167, 139, 250, 0.16);
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #34d399 25%, #60a5fa 85%);
+}
+
+/* 首页 Hero 按钮微动效 */
+.VPButton.brand {
+  border-color: var(--vp-c-brand-2);
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+
+/* Feature 核心特性卡片高级质感 */
+.VPFeature {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  background-color: var(--vp-c-bg-soft);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.12);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.5), 0 0 16px rgba(16, 185, 129, 0.15);
+}
+
+/* 增强文章内代码块质感 */
+.vp-doc div[class*='language-'] {
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.dark .vp-doc div[class*='language-'] {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* 表格视觉优化 */
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+  border: 1px solid var(--vp-c-border);
+  padding: 10px 14px;
+}
+
+.vp-doc td {
+  border: 1px solid var(--vp-c-border);
+  padding: 10px 14px;
+}
+
+.vp-doc tr:nth-child(2n) {
+  background-color: var(--vp-c-bg-alt);
+}
+
+/* 交互工具通用卡片容器 */
+.mz-tool-card {
+  margin: 24px 0;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.mz-tool-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: var(--vp-c-bg-alt);
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+.mz-tool-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--vp-c-text-1);
+}
+
+.mz-tool-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-brand-1);
+}
+
+.mz-tool-body {
+  padding: 20px;
+}

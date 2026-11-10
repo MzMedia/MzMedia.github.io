@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="iTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <marker id="iArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+    <marker id="iArrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="460" rx="16" fill="url(#iBg)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="230" y="18" width="460" height="34" rx="17" fill="#1e293b" stroke="url(#iTitle)" stroke-width="1.5"/>
+  <text x="460" y="40" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">
+    数控机床与旋转机械：预测性维护与 MES/WMS 闭环系统架构
+  </text>
+
+  <!-- Left: CNC Machine & Sensors -->
+  <g transform="translate(35, 75)">
+    <rect width="230" height="345" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <text x="115" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#34d399" text-anchor="middle">【现场采集层 (CNC / 电机)】</text>
+    
+    <rect x="20" y="50" width="190" height="60" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">三轴压电振动加速度计</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">RMS / 峭度 (Kurtosis) / 峰值</text>
+
+    <rect x="20" y="125" width="190" height="60" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="150" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">数控系统 CNC PLC</text>
+    <text x="35" y="170" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">主轴转速 / 进给 / 负载电流</text>
+
+    <rect x="20" y="200" width="190" height="60" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="225" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">红外轴承测温探头</text>
+    <text x="35" y="245" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">0.1℃ 精度，主轴前后支承</text>
+
+    <rect x="20" y="275" width="190" height="50" rx="6" fill="#064e3b" stroke="#10b981"/>
+    <text x="115" y="305" font-family="system-ui, sans-serif" font-size="11" fill="#a7f3d0" text-anchor="middle">Modbus TCP 端口 502 / RTU</text>
+  </g>
+
+  <!-- Flow Arrow Left to Center -->
+  <line x1="265" y1="240" x2="310" y2="240" stroke="#10b981" stroke-width="2" marker-end="url(#iArrow)"/>
+  <text x="288" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#6ee7b7" text-anchor="middle">100ms</text>
+
+  <!-- Center: MzMedia Engine & TDengine -->
+  <g transform="translate(310, 75)">
+    <rect width="270" height="345" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="135" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#38bdf8" text-anchor="middle">【时序存储与 Spring AI 中枢】</text>
+
+    <rect x="20" y="50" width="230" height="75" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">TDengine 3.0 超级表</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· st_machine_vibration 列存</text>
+    <text x="35" y="112" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">· 10倍高压缩率，超限毫秒告警</text>
+
+    <rect x="20" y="140" width="230" height="90" rx="6" fill="#1e293b" stroke="#8b5cf6"/>
+    <text x="35" y="165" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#c084fc">Spring AI 运维 RAG Agent</text>
+    <text x="35" y="185" font-family="system-ui, sans-serif" font-size="11" fill="#e9d5ff">· MCP Tools 自动调取历史波形</text>
+    <text x="35" y="203" font-family="system-ui, sans-serif" font-size="11" fill="#e9d5ff">· 轴承损伤特征频域 FFT 匹配</text>
+    <text x="35" y="220" font-family="system-ui, sans-serif" font-size="11" fill="#a855f7">· 输出 RUL 剩余安全寿命</text>
+
+    <rect x="20" y="245" width="230" height="75" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="270" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">TCA 场景联动与工作流</text>
+    <text x="35" y="290" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">· 自动发布维修广播与审批</text>
+    <text x="35" y="307" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">· 动态阻断严重超差排程</text>
+  </g>
+
+  <!-- Flow Arrow Center to Right -->
+  <line x1="580" y1="240" x2="625" y2="240" stroke="#38bdf8" stroke-width="2" marker-end="url(#iArrowBlue)"/>
+  <text x="602" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#7dd3fc" text-anchor="middle">闭环</text>
+
+  <!-- Right: MES & WMS Synergy -->
+  <g transform="translate(625, 75)">
+    <rect width="260" height="345" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="130" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#fbbf24" text-anchor="middle">【业务闭环协同层】</text>
+
+    <!-- Sub 1: MES -->
+    <rect x="20" y="50" width="220" height="85" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24">MES 制造执行工单</text>
+    <text x="35" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 自动派发前轴承换件巡检单</text>
+    <text x="35" y="112" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 协调换班窗口 (16:00-18:00)</text>
+    <text x="35" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 降低切削负载至 70% 保护主轴</text>
+
+    <!-- Sub 2: WMS -->
+    <rect x="20" y="150" width="220" height="85" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="175" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#34d399">WMS 智能备件仓储</text>
+    <text x="35" y="195" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 查询 NN3020 轴承在库情况</text>
+    <text x="35" y="212" font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">· 自动执行虚拟锁定预占</text>
+    <text x="35" y="228" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">· 避免缺件导致二次停工</text>
+
+    <!-- Sub 3: Video Inspection -->
+    <rect x="20" y="250" width="220" height="75" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="35" y="275" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">车间巡检球机自动追溯</text>
+    <text x="35" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">· 转动至该机床工位预置位</text>
+    <text x="35" y="312" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">· 记录维保人员换件作业全过程</text>
+  </g>
+</svg>

@@ -5,14 +5,35 @@ export default defineConfig({
   description: '专为中小企业量身打造的企业级 AI 驱动物联网与视频融合平台',
   lang: 'zh-CN',
   base: '/',
+  lastUpdated: true,
+  markdown: {
+    lineNumbers: true
+  },
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }],
     ['meta', { name: 'keywords', content: 'MzMedia, 物联网, GB28181, ZLMediaKit, Spring AI, MCP, Modbus, MQTT, TDengine, RuoYi-Vue-Pro' }],
-    ['meta', { name: 'theme-color', content: '#10b981' }]
+    ['meta', { name: 'theme-color', content: '#10b981' }],
+    ['meta', { property: 'og:title', content: 'MzMedia - 企业级 AI 驱动物联网与视频融合平台' }],
+    ['meta', { property: 'og:description', content: '抹平工控与音视频协议差异，打破系统烟囱，AI 赋能低成本全生命周期智能运维' }]
   ],
   themeConfig: {
     logo: '/img/logo.png',
     siteTitle: 'MzMedia',
+    editLink: {
+      pattern: 'https://github.com/MzMedia/MzMedia.github.io/edit/main/:path',
+      text: '在 GitHub 上编辑此页'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
     search: {
       provider: 'local',
       options: {
@@ -39,12 +60,22 @@ export default defineConfig({
     },
     nav: [
       { text: '💡 指南', link: '/guide/intro' },
+      { text: '💼 落地案例', link: '/cases/overview' },
       { text: '📹 视频中心', link: '/media/overview' },
       { text: '📡 物联网引擎', link: '/iot/overview' },
       { text: '🤖 Spring AI', link: '/ai/overview' },
       { text: '🏭 工业协同', link: '/synergy/pms' },
       { text: '🚀 部署运维', link: '/deploy/docker-compose' },
       { text: '🛡️ 架构防线', link: '/standards/git-sync' },
+      {
+        text: '🛠️ 在线工具',
+        items: [
+          { text: '⚡ Modbus 字节序换算器', link: '/iot/modbus#endian-calc' },
+          { text: '📹 Jessibuca 播放引擎演示', link: '/media/player#player-demo' },
+          { text: '📐 TSL 物模型校验器', link: '/iot/tsl#tsl-validator' },
+          { text: '🔌 13+ 通信协议矩阵', link: '/iot/protocols#protocol-matrix' }
+        ]
+      },
       {
         text: '🌐 代码仓库',
         items: [
@@ -54,6 +85,20 @@ export default defineConfig({
       }
     ],
     sidebar: {
+      '/cases/': [
+        {
+          text: 'AIoT 行业落地案例库',
+          items: [
+            { text: '🎯 方案全景与赋能矩阵', link: '/cases/overview' },
+            { text: '📹 视频联动：传感器秒级驱动球机', link: '/cases/video-linkage' },
+            { text: '🏭 工业应用：机床预测性维护与 MES', link: '/cases/industrial' },
+            { text: '🛡️ 智能安防：园区周界防范与声光联动', link: '/cases/security' },
+            { text: '🌱 智慧农业：温室水肥自愈与植保 AI', link: '/cases/agriculture' },
+            { text: '🎓 数字化教育：实验室安全与能效巡考', link: '/cases/education' },
+            { text: '⚡ 智慧能源：工商业储能与微电网调度', link: '/cases/energy-carbon' }
+          ]
+        }
+      ],
       '/guide/': [
         {
           text: '平台概览',

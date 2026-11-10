@@ -37,7 +37,15 @@
 
 ---
 
-## 2. 设备影子 (Device Shadow)
+## 2. 在线物模型解析与语法校验器 {#tsl-validator}
+
+您可以通过下方交互器切换预置工业设备模板，或直接粘贴业务 JSON 进行实时规范性验证：
+
+<TslModelValidator />
+
+---
+
+## 3. 设备影子 (Device Shadow)
 
 在弱网或移动应用场景中，设备并不总是在线。MzMedia 提供了**设备影子**机制：
 - 缓存设备最新的物理属性值（Reported 状态）；

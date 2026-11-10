@@ -52,3 +52,11 @@ public void onMediaLinkage(IotMediaLinkageEvent event) {
     // 自动向球机发送 0x81 指令码并调用 ZLMediaKit 抓取实时快照
 }
 ```
+
+---
+
+## 3. 实战案例推荐
+
+深入了解基于 0x81 预置位联动的生产落地全流程：
+- [📹 视频联动实战案例：变电站与危化品库传感器超限秒级驱动球机转动预置位与 AI 视觉复核](/cases/video-linkage)
+- [🛡️ 智能安防实战案例：脉冲电子围栏触碰秒级调度球机追踪与声光报警](/cases/security)

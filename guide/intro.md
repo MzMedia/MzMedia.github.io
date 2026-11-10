@@ -44,6 +44,20 @@
 
 ---
 
+## 💼 行业深度落地案例
+
+了解 MzMedia 在实际工业生产与数字化管理中的真实落地案例与量化 ROI：
+- [📹 **传感器与视频深度联动**](/cases/video-linkage)：传感器超限 1.8 秒内驱动球机预置位旋转与 AI 视觉复核；
+- [🏭 **工业应用与预测性维护**](/cases/industrial)：机床与电机振动时序 RAG 诊断，WMS 备件预占与 MES 工单闭环；
+- [🛡️ **智能安防与周界防范**](/cases/security)：脉冲电子围栏触碰联动 4K 球机追踪与声光报警现场驱离；
+- [🌱 **智慧农业与现代温室**](/cases/agriculture)：温湿度与水肥四合一自适应闭环环控，云台多预置位病虫害早期识别；
+- [🎓 **数字化教育与实验室安全**](/cases/education)：危化品防爆柜 VOC 气体超限秒级强排风，实验服护目镜视觉审计；
+- [⚡ **智慧能源与低碳建筑**](/cases/energy-carbon)：工商业储能动态削峰填谷，变压器需量保护与中央空调自适应调优。
+
+查看完整的 [AIoT 行业落地案例全景矩阵 →](/cases/overview)
+
+---
+
 ## 🌐 代码仓库与开源生态
 
 - **Gitee 仓库**：[https://gitee.com/mzmedia/mz-media.git](https://gitee.com/mzmedia/mz-media.git)
